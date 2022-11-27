@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    background: url(https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895342.jpg?w=1480&t=st=1669469457~exp=1669470057~hmac=826d5e830411bb321a103ca18ea1bcabbe705765e0a122ffa3a7e9910ba101ba);
+    background-repeat: no-repeat; 
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+header nav{
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+    
+}
+header nav .brand {
+    font-size: 40px;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+} 
+
+ header nav .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}  
+ header nav .nav-right a {
+    text-decoration: none;
+    color: #ffff;
+    margin-right: 100px;
+    position: relative;
+    font-size: 20px;
+} 
+
+header nav .nav-right a:hover {
+    transform: scale(1.4);
+}
+
+header nav .nav-right .search > div {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+header nav .nav-right .search > div input {
+    background: transparent;
+    border: none;
+    outline:none;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+header nav .nav-right .search > div img {
+    padding-right: 16px;
+}
+
+.main .left img{
+    width:500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 3; 
+    animation: moveIn 4s ease-in-out infinite;
+}
+
+@keyframes moveIn {
+  50% {
+     top: 300px; 
+     
+      
+  }
+}
+
+.head{
+    color: #fff;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+}
+.head h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.head p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.menu {
+    display: none;
+}
+
+@media screen and (max-width:600px){
+
+    .head{
+        color: #fff;
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top:80%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+    }
+    .head h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .head p {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+    header nav .brand {
+        position: absolute;
+        font-size: 30px;
+        left: 20px;
+        top: 80px;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+    } 
+    .main .left img{
+        width:350px;
+        height: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        z-index: 3; 
+        animation: moveIn 4s ease-in-out infinite;
+    }
+
+    header nav .nav-right .search > div {
+        display: none;
+    }
+    
+    header nav .nav-right .search > div input {
+        display: none;
+    }
+    header nav .nav-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 50px;
+        left:75%;
+    
+    }  
+     header nav .nav-right a {
+        display: block;
+        text-decoration: none;
+        color: #ffff;
+        margin-right: 100px;
+        position: relative;
+        font-size: 18px;
+    } 
+    header {
+        background: url(https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895342.jpg?w=1480&t=st=1669469457~exp=1669470057~hmac=826d5e830411bb321a103ca18ea1bcabbe705765e0a122ffa3a7e9910ba101ba);
+        background-repeat: no-repeat; 
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+    }
+    .btn {
+        margin-top: 20px;
+        padding: 10px 30px;
+        border-radius: 50px;
+        border: none;
+        font-size: 16px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
